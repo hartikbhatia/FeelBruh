@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abc"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/hiphop"
+            android:layout_width="170dp"
+            android:layout_height="163dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.619"
+            app:layout_constraintStart_toEndOf="@+id/rock"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.011"
+            app:srcCompat="@drawable/hiphop" />
+
+        <ImageView
+            android:id="@+id/rock"
+            android:layout_width="197dp"
+            android:layout_height="192dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rock" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/feel"
+            android:layout_width="592dp"
+            android:layout_height="1276dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hiphop"
+            tools:layout_editor_absoluteX="10dp">
+
+            <ImageView
+                android:id="@+id/tomorrowland"
+                android:layout_width="328dp"
+                android:layout_height="190dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/workout"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/concert" />
+
+            <ImageView
+                android:id="@+id/workout"
+                android:layout_width="331dp"
+                android:layout_height="322dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.008"
+                app:srcCompat="@drawable/workout" />
+
+            <ImageView
+                android:id="@+id/imgprada"
+                android:layout_width="189dp"
+                android:layout_height="240dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.726"
+                app:srcCompat="@drawable/jass" />
+
+            <ImageView
+                android:id="@+id/kids"
+                android:layout_width="178dp"
+                android:layout_height="196dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tomorrowland"
+                app:srcCompat="@drawable/kids" />
+
+            <ImageView
+                android:id="@+id/old"
+                android:layout_width="141dp"
+                android:layout_height="195dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/kids"
+                app:layout_constraintTop_toBottomOf="@+id/tomorrowland"
+                app:srcCompat="@drawable/old" />
+
+            <ImageView
+                android:id="@+id/trending"
+                android:layout_width="352dp"
+                android:layout_height="353dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgprada"
+                app:srcCompat="@drawable/trending" />
+
+            <ImageView
+                android:id="@+id/sports"
+                android:layout_width="156dp"
+                android:layout_height="140dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/trending"
+                app:layout_constraintStart_toEndOf="@+id/imgprada"
+                app:layout_constraintTop_toBottomOf="@+id/old"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/sprts" />
+
+            <TextView
+                android:id="@+id/textViewfeel"
+                android:layout_width="153dp"
+                android:layout_height="58dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:text="FEEL IT"
+                android:textColor="@color/colorAccent"
+                android:textSize="43dp"
+                app:layout_constraintBottom_toTopOf="@+id/trending"
+                app:layout_constraintStart_toEndOf="@+id/imgprada"
+                app:layout_constraintTop_toBottomOf="@+id/sports"
+                app:layout_constraintVertical_bias="0.388" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
